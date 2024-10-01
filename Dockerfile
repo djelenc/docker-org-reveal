@@ -38,14 +38,6 @@ RUN echo "#log: Setup project" \
  && set -x \
  && make setup/debian sudo="" \
  && make setup \
- && make download \
  && sync
 
-CMD ["make", "all"]
-
-# create org-reveal img
-# push it to dockerhub
-# then pull it from DH in GL-ci
-# co project
-# build project
-# deploy / save artefacts
+CMD ["make", "download", "all"]
