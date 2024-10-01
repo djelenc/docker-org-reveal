@@ -1,11 +1,11 @@
 FROM debian:bookworm-slim
 MAINTAINER djelenc@gmail.com
 
-ENV DEBIAN_FRONTEND noninteractive
-ENV LC_ALL en_US.UTF-8
-ENV LANG ${LC_ALL}
-ENV LANGUAGE ${LC_ALL}
-ENV workdir /slides/
+ENV DEBIAN_FRONTEND=noninteractive
+ENV LC_ALL=en_US.UTF-8
+ENV LANG=${LC_ALL}
+ENV LANGUAGE=${LC_ALL}
+ENV workdir=/slides/
 
 WORKDIR ${workdir}
 
