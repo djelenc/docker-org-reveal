@@ -1,5 +1,5 @@
 * Docker org-reveal
 
-This image contains a all dependencies to export a presentation written in an =org= file to HTML using [[https://revealjs.com][reveal.js]] and [[https://github.com/yjwen/org-reveal][org-reveal]].
+This image contains all dependencies and scripts to export a presentation written in an =org= file using [[https://github.com/yjwen/org-reveal][org-reveal]] and [[https://revealjs.com][reveal.js]] to HTML. It can be used in a CI/CD pipeline to automatically generate HTML slides from org files and publish them, for instance in a GitLabCI.
 
 All credits go to the author of org-reval, Yujie Wen, who also created the =Dockerfile= and the =Makefile= used in this image.
