@@ -1,0 +1,5 @@
+* Docker org-reveal
+
+This image contains a all dependencies to export a presentation written in an =org= file to HTML using [[https://revealjs.com][reveal.js]] and [[https://github.com/yjwen/org-reveal][org-reveal]].
+
+All credits go to the author of org-reval, Yujie Wen, who also created the =Dockerfile= and the =Makefile= used in this image.
