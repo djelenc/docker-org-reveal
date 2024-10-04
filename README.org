@@ -1,14 +1,14 @@
 * Docker org-reveal
 This image contains all dependencies and scripts needed to export a presentation written in an =org= file using [[https://github.com/yjwen/org-reveal][org-reveal]] and [[https://revealjs.com][reveal.js]] to HTML.
 
-It can be used in a CI/CD pipeline to automatically generate HTML slides from org files and publish them, for instance in a GitLabCI.
+It can be used in a CI/CD pipeline to automatically generate HTML slides from =org= files and publish them, for instance in a GitLabCI.
 * Usage
 Use scripts =org2html= and =org-reveal2html= to convert and an =org= file to a standard HTML or reveal.js presetation, respectively. For instance:
 
 #+begin_src txt
-org2html index.org # produces index.html using standard org HTML export
+$ org2html index.org # produces index.html using standard org HTML export
 
-org-reveal2html presentation.org # produces presentation.html using reveal.js presentation
+$ org-reveal2html presentation.org # produces presentation.html using reveal.js
 #+end_src
 
 The script =org-reveal2html= also creates a copy of a reveal.js archive in current directory.
