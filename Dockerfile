@@ -6,7 +6,7 @@ ENV LC_ALL=en_US.UTF-8
 ENV LANG=${LC_ALL}
 ENV LANGUAGE=${LC_ALL}
 ENV workdir=/slides
-ENV reveal_url=https://github.com/hakimel/reveal.js/archive/master.zip
+ENV reveal_url=https://github.com/hakimel/reveal.js/archive/refs/tags/5.1.0.zip
 
 RUN mkdir -p ${workdir}
 
@@ -53,10 +53,8 @@ RUN echo "#log: Setting up emacs" \
 RUN echo "#log: Setting up reveal.js" \
  && wget -O- ${reveal_url} > reveal.js.zip \
  && unzip reveal.js.zip \
- && mv reveal.js-master /reveal.js \
+ && mv reveal.js-5.1.0 /reveal.js \
  && rm -f reveal.js.zip
 
 ADD org2html.sh /usr/bin/org2html
 ADD org-reveal2html.sh /usr/bin/org-reveal2html
-
-CMD ["org-reveal2html"]
