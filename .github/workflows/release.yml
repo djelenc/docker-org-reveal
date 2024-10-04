@@ -1,8 +1,9 @@
-name: Upload to DockerHub on release
+name: Upload to DockerHub on new tags
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - '*'
 
 jobs:
   deploy:
