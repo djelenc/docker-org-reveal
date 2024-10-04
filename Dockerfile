@@ -59,3 +59,4 @@ RUN echo "#log: Setting up reveal.js" \
 ADD org2html.sh /usr/bin/org2html
 ADD org-reveal2html.sh /usr/bin/org-reveal2html
 
+CMD ["org-reveal2html"]
